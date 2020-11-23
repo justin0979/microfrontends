@@ -3,7 +3,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { StylesProvider } from "@material-ui/core/styles";
 
 import Landing from "./components/Landing";
-import Pricing from "./components/Pricing";
+import pricing from "./components/Pricing";
 
 export default () => {
   return (
@@ -11,7 +11,7 @@ export default () => {
       <StylesProvider>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/pricing" component={Pricing} />
+            <Route exact path="/pricing" component={pricing} />
             <Route path="/" component={Landing} />
           </Switch>
         </BrowserRouter>
